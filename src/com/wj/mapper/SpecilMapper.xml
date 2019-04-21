@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wj.mapper.SpecilMappe">
+
+    <resultMap id="myResultMap" type="specil">
+        <!-- 用id元素映射主键列 -->
+
+        <!--   -->
+    </resultMap>
+    <select id="findSpecilById" parameterType="int" resultType="com.wj.po.Specil">
+          select spilinfoid sid, spilinfoname sname ,spilinfocode scode, spilinfoaim saim,spilinfoprodire sprodire  from specilinfo
+          where spilinfoid=#{id}
+    </select>
+    
+    <select id=""
+</mapper>
